@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <input type="file" name="image" id="image" accept="image/png">
+  <canvas id="colorPreview" width="50" height="50"></canvas>
+  <input type="range" min="1" max="50" id="previewZoom" value="1">
+  <br>
+  <div class="drawing-board">
+    <canvas id="preview"></canvas>
+    <canvas id="previewGrid" class="grid"></canvas>
+  </div>
+
+  <br>
+
+  <form id="resizeForm">
+    <input type="number" placeholder="Width" name="width" id="widthInput" value="1">
+    <input type="number" placeholder="Height" name="height" id="heightInput" value="1">
+    <input type="range" min="1" max="50" id="uvZoom" value="1">
+    <button type="submit">Resize</button>
+  </form>
+
+  <button type="button" id="export">Export</button>
+
+  <br>
+  <div class="drawing-board">
+    <canvas id="uv" width="1" height="1"></canvas>
+    <canvas id="grid" class="grid" width="1" height="1"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

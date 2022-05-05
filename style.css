@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+}
+
+#colorPreview {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#preview {
+  image-rendering: pixelated;
+  border: 1px solid black;
+}
+
+#uv {
+  image-rendering: pixelated;
+}
+
+.drawing-board {
+  position: relative;
+}
+
+.grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
